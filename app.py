@@ -22,6 +22,7 @@ logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
 
+
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))
     mae = mean_absolute_error(actual, pred)
@@ -62,7 +63,7 @@ if __name__ == "__main__":
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
 
     # Set tracking URI to local mlruns directory
-    mlflow.set_tracking_uri("file:./mlruns")
+    #mlflow.set_tracking_uri("file:./mlruns")
 
     with mlflow.start_run():
         lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio, random_state=42)
@@ -86,15 +87,11 @@ if __name__ == "__main__":
         predictions = lr.predict(train_x)
         signature = infer_signature(train_x, predictions)
 
-        # Log the model locally
-        mlflow.sklearn.log_model(lr, "model", signature=signature)
+          ## For Remote server only(DAGShub)
 
-        # Uncomment the following section when you want to use remote tracking
-        """
-        # For Remote server only (DAGShub)
-        # remote_server_uri = "https://dagshub.com/your-username/your-repo.mlflow"
-        # mlflow.set_tracking_uri(remote_server_uri)
-        
+        remote_server_uri="https://dagshub.com/Abdisamad001/mlflowexperments.mlflow"
+        mlflow.set_tracking_uri(remote_server_uri)
+
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
         # Model registry does not work with file store
@@ -102,4 +99,17 @@ if __name__ == "__main__":
             mlflow.sklearn.log_model(
                 lr, "model", registered_model_name="ElasticnetWineModel"
             )
-        """
+
+        # Log the model locally
+        mlflow.sklearn.log_model(lr, "model", signature=signature)
+
+
+        ### un comment here to see Stage transition:
+        # from mlflow.tracking import MlflowClient
+        # client = MlflowClient()
+        # client.transition_model_version_stage(
+        #     name="ElasticnetWineModel",
+        #     version=2,  # your latest version
+        #     stage="Production"
+        # )
+     
