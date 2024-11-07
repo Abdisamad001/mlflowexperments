@@ -44,11 +44,11 @@ Metric monitoring
 
 #### 🤝 Contributing
 Feel free to:
-Fork the repository
-Create a feature branch
-Submit pull requests
+- Fork the repository
+- Create a feature branch
+- Submit pull requests
 
 
 #### 📫 Contact
 ##### GitHub: @Abdisamad001
-##### DagsHub: Project Link : https://dagshub.com/Abdisamad001/mlflowexperments
+##### DagsHub: Project Link :View Project ↗️
