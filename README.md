@@ -10,7 +10,7 @@ This project demonstrates MLflow experiment tracking integration with DagsHub.
 ![DagsHub](https://img.shields.io/badge/dagshub-0.3.42-blue)
 
 ### 🚀 Setup Instructions
-📥 # Clone the repository
+
 git clone https://github.com/Abdisamad001/mlflowexperiments.git
 
 # Install dependencies
