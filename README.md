@@ -1,5 +1,5 @@
 # 🔬 MLFlow Experiments
-This project demonstrates MLflow experiment tracking integration with DagsHub.
+This project is an experiment of MLflow tracking integration with DagsHub
 
 ## ⚒️ Tech Stack
 ![Python](https://img.shields.io/badge/python-3.9.0-blue)
@@ -32,9 +32,6 @@ pip install -r requirements.txt
 ### ▶️ Run the experiment
   python app.py
 
-🔗 DagsHub Integration
-This project uses DagsHub for MLflow experiment tracking. Results can be viewed at: DagsHub Project Link
-
 #### 📊 Model Performance Tracking
 Experiment tracking with MLflow
 Model versioning
@@ -42,11 +39,8 @@ Parameter logging
 Metric monitoring
 
 ##### 🤝 Contributing
-Feel free to:
+Feel free to Fork the repository
 
-Fork the repository
-Create a feature branch
-Submit pull requests
 
 
 ### 📫 Contact
