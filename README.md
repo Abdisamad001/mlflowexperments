@@ -16,9 +16,6 @@ git clone https://github.com/Abdisamad001/mlflowexperiments.git
 # Install dependencies
 pip install -r requirements.txt
 
-# Run with docker-compose
-docker-compose -p ai -f docker-compose.custom.yml up
-
 ### 📦 Install dependencies
 pip install -r requirements.txt
 
