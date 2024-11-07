@@ -10,9 +10,14 @@ This project demonstrates MLflow experiment tracking integration with DagsHub.
 ![DagsHub](https://img.shields.io/badge/dagshub-0.3.42-blue)
 
 ### 🚀 Setup Instructions
-📥 Clone the repository
+📥 # Clone the repository
 git clone https://github.com/Abdisamad001/mlflowexperiments.git
-cd mlflowexperiments
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run with docker-compose
+docker-compose -p ai -f docker-compose.custom.yml up
 
 ### 📦 Install dependencies
 pip install -r requirements.txt
