@@ -21,14 +21,14 @@ cd mlflowexperiments
 pip install -r requirements.txt
 
 ### 📋 Requirements
-mlflow==2.5.0
-pandas==2.2.3
-numpy==1.26.4
-scikit-learn==1.5.2
-wget==3.2
-dagshub==0.3.42
-matplotlib==3.9.2
-scipy==1.13.1
+- mlflow==2.5.0
+- pandas==2.2.3
+- numpy==1.26.4
+- scikit-learn==1.5.2
+- wget==3.2
+- dagshub==0.3.42
+- matplotlib==3.9.2
+- scipy==1.13.1
 
 ### ▶️ Run the experiment
 python app.py
@@ -50,5 +50,5 @@ Submit pull requests
 
 
 #### 📫 Contact
-GitHub: @Abdisamad001
-DagsHub: Project Link
+##### GitHub: @Abdisamad001
+##### DagsHub: Project Link : https://dagshub.com/Abdisamad001/mlflowexperments
