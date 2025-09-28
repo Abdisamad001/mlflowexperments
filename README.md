@@ -1,7 +1,7 @@
 # 🔬 MLFlow Experiments
 This project is an experiment of MLflow tracking integration with DagsHub
 
-## ⚒️ Tech Stack
+
 ![Python](https://img.shields.io/badge/python-3.9.0-blue)
 ![MLflow](https://img.shields.io/badge/mlflow-2.5.0-blue)
 ![Pandas](https://img.shields.io/badge/pandas-2.2.3-blue)
