@@ -9,17 +9,17 @@ This project is an experiment of MLflow tracking integration with DagsHub
 ![NumPy](https://img.shields.io/badge/numpy-1.26.4-blue)
 ![DagsHub](https://img.shields.io/badge/dagshub-0.3.42-blue)
 
-### 🚀 Setup Instructions
+### Setup Instructions
 
 git clone https://github.com/Abdisamad001/mlflowexperiments.git
 
 # Install dependencies
 pip install -r requirements.txt
 
-### 📦 Install dependencies
+###  Install dependencies
 pip install -r requirements.txt
 
-### 📋 Requirements
+###  Requirements
 - mlflow==2.5.0
 - pandas==2.2.3
 - numpy==1.26.4
@@ -29,20 +29,18 @@ pip install -r requirements.txt
 - matplotlib==3.9.2
 - scipy==1.13.1
   
-### ▶️ Run the experiment
+### Run the experiment
   python app.py
 
-#### 📊 Model Performance Tracking
+#### Model Performance Tracking
 Experiment tracking with MLflow
 Model versioning
 Parameter logging
 Metric monitoring
 
-##### 🤝 Contributing
-Feel free to Fork the repository
 
 
 
-### 📫 Contact
+###  Contact
 - **GitHub:** [Abdisamad001](https://github.com/Abdisamad001)
 - **DagsHub:** [![View Project](https://img.shields.io/badge/View_Project-DagsHub-blue)](https://dagshub.com/Abdisamad001/mlflowexperments)
